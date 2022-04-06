@@ -1,0 +1,101 @@
+.mediaHeight(@1920, @1024, @768) {
+    @media (min-width: 0px) {
+        height: @768;
+    }
+
+    @media (min-width: 1024px) {
+        height: @1024;
+    }
+
+    @media (min-width: 1920px) {
+        height: @1920;
+    }
+}
+
+.mediaWidth(@1920, @1024, @768) {
+    @media (min-width: 0px) {
+        width: @768;
+    }
+
+    @media (min-width: 1024px) {
+        width: @1024;
+    }
+
+    @media (min-width: 1920px) {
+        width: @1920;
+    }
+}
+.singInBorder() {
+    @media (min-width: 0px) {
+        border: 2px solid #212121;
+        border-radius: 8px;
+    }
+
+    @media (min-width: 1024px) {
+        border: 2px solid #212121;
+        border-radius: 8px;
+    }
+
+    @media (min-width: 1920px) {
+        border: 4px solid #212121;
+        border-radius: 16px;
+    }
+}
+.fontSize(@rule1920, @rule1024, @rule) {
+    @media (min-width: 0px) {
+        @rule();
+    }
+
+    @media (min-width: 1024px) {
+        @rule1024();
+        
+    }
+
+    @media (min-width: 1920px) {
+        @rule1920();
+    }
+}
+
+.Footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .design {
+        display: flex;
+    }
+    .fontSize({
+        padding: 37px 243px 37px 243px;
+    },{
+        padding: 37px 87px 37px 87px;
+    },{
+        padding: 37px 49px 37px 49px;
+    });
+    background: #212121;
+    color: #FFFFFF;
+    .buyNft {
+        color: #FFFFFF;
+        text-decoration: none;
+        .mediaHeight(66px, 46px, 46px);
+        .mediaWidth(168px, 90px, 90px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .fontSize({
+            border: 4px solid #FFFFFF;
+            border-radius: 16px;
+        },{
+            border-radius: 8px;
+        },{
+            border: 2px solid #FFFFFF;
+            box-sizing: border-box;
+            border-radius: 8px;
+        });
+    }
+    .title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 26px;
+        text-align: center;
+    }
+}

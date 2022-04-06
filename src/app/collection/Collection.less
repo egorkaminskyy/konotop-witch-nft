@@ -1,0 +1,131 @@
+.mediaHeight(@1920, @1024, @768) {
+    @media (min-width: 0px) {
+        height: @768;
+    }
+
+    @media (min-width: 1024px) {
+        height: @1024;
+    }
+
+    @media (min-width: 1920px) {
+        height: @1920;
+    }
+}
+
+.mediaWidth(@1920, @1024, @768) {
+    @media (min-width: 0px) {
+        width: @768;
+    }
+
+    @media (min-width: 1024px) {
+        width: @1024;
+    }
+
+    @media (min-width: 1920px) {
+        width: @1920;
+    }
+}
+
+.fontSize(@rule1920, @rule1024, @rule) {
+    @media (min-width: 0px) {
+        @rule();
+    }
+
+    @media (min-width: 1024px) {
+        @rule1024();
+        
+    }
+
+    @media (min-width: 1920px) {
+        @rule1920();
+    }
+}
+.Collection {
+    .collection_title{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        padding-bottom: 43px;
+        text-align: center; 
+        .fontSize({
+            font-size: 48px;
+            line-height: 53px;
+        },
+        {
+            font-size: 36px;
+            line-height: 40px;
+        },
+        {
+            font-size: 36px;
+            line-height: 40px;
+        });
+
+    }
+    .collection_container{
+        margin-bottom: 26px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            .text_container {
+                .title {
+                    font-weight: 700;
+                    font-size: 36px;
+                    line-height: 40px;
+                    text-align: center;
+                    padding: 23px;
+                }
+                .description {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 18px;
+                    text-align: center;
+                    white-space: pre-line;
+                }
+            }
+            .nft {
+                border-radius: 24px;
+                background-size: 102%;
+                box-sizing: border-box;
+                .mediaHeight(345px, 205px, 163.21px);
+                .mediaWidth(278px, 165px, 131.83px);
+                .fontSize({
+                    border: 6px solid #212121;
+                },
+                {
+                    border: 4px solid #212121;
+                },
+                {
+                    border: 2px solid #212121;
+                });
+            }
+        }
+    }
+    .button_container {
+        padding: 52px;
+        border: 8px solid #212121;
+        box-sizing: border-box;
+        border-radius: 48px;
+        text-decoration: none;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .fontSize({
+            font-size: 48px;
+            line-height: 53px;
+        },
+        {
+            font-size: 36px;
+            line-height: 40px;
+        },
+        {
+            font-size: 36px;
+            line-height: 40px
+        });
+    }
+}

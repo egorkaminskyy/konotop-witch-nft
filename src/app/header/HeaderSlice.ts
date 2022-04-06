@@ -24,26 +24,3 @@ export const { logoClick, homeClick, faqClick, collectionClick, singInClick, abo
 }
 
 export default header.reducer;
-
-export type Link = {
-    linkUrl: string;
-    title: string;
-}
-
-export interface HeaderResources {
-    logoUrl: string;
-    faqLink: Link;
-    homeLink: Link;
-    aboutLink: Link;
-    singInLink: Link;
-    collectionLink: Link;
-}
-
-export interface HeaderProps {
-    resources: HeaderResources;
-    onLogoClick: () => void;
-    onFaqClick: () => void;
-    onHomeClick: () => void;
-    onAboutClick: () => void;
-    onSinginClick: () => void;
-}

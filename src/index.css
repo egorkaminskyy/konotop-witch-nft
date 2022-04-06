@@ -1,13 +1,337 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: DXRigraf , sans-serif;
+  height: 100%;
+  width: 100%;
+  background-image: url(../public/konotop_witch_nft.svg);
+  background-size: cover;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 900;
+  src:url("./fonts/OTF/DXRigraf-Black.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-stretch: expanded;
+  font-weight: 900;
+  src:url("./fonts/OTF/DXRigraf-BlackExpanded.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-stretch: expanded;
+  font-style: italic;
+  font-weight: 900;
+  src:url("./fonts/OTF/DXRigraf-BlackExpandedItalic.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-stretch: extra-expanded;
+  font-style: italic;
+  font-weight: 900;
+  src:url("./fonts/OTF/DXRigraf-BlackExtExpIta.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-stretch: extra-expanded;
+  font-weight: 900;
+  src:url("./fonts/OTF/DXRigraf-BlackExtraExpanded.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-style: italic;
+  font-weight: 900;
+  src:url("./fonts/OTF/DXRigraf-BlackItalic.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 700;
+  src:url("./fonts/OTF/DXRigraf-Bold.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 700;
+  font-stretch: expanded;
+  src:url("./fonts/OTF/DXRigraf-BoldExpanded.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 700;
+  font-stretch: expanded;
+  font-style: italic;
+  src:url("./fonts/OTF/DXRigraf-BoldExpandedItalic.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 700;
+  font-stretch: extra-expanded;
+  font-style: italic;
+  src:url("./fonts/OTF/DXRigraf-BoldExtExpIta.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 700;
+  font-stretch: extra-expanded;
+  src:url("./fonts/OTF/DXRigraf-BoldExtraExpanded.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 700;
+  font-style: italic;
+  src:url("./fonts/OTF/DXRigraf-BoldItalic.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-stretch: expanded;
+  src:url("./fonts/OTF/DXRigraf-Expanded.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-stretch: expanded;
+  font-style: italic;
+  src:url("./fonts/OTF/DXRigraf-ExpandedItalic.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 800;
+  font-stretch: expanded;
+  font-style: italic;
+  src:url("./fonts/OTF/DXRigraf-ExtBdExpIta.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 800;
+  font-stretch: extra-expanded;
+  src:url("./fonts/OTF/DXRigraf-ExtBdExtExp.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 800;
+  font-stretch: extra-expanded;
+  font-style: italic;
+  src:url("./fonts/OTF/DXRigraf-ExtBdExtExpIta.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 200;
+  font-stretch: expanded;
+  font-style: italic;
+  src:url("./fonts/OTF/DXRigraf-ExtLtExpIta.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 200;
+  font-stretch: extra-expanded;
+  src:url("./fonts/OTF/DXRigraf-ExtLtExtExp.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 200;
+  font-stretch: extra-expanded;
+  font-style: italic;
+  src:url("./fonts/OTF/DXRigraf-ExtLtExtExpIta.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: bolder;
+  font-weight: 800;
+  src:url("./fonts/OTF/DXRigraf-ExtraBold.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 800;
+  font-stretch: expanded;
+  src:url("./fonts/OTF/DXRigraf-ExtraBoldExpanded.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 800;
+  font-style: italic;
+  src:url("./fonts/OTF/DXRigraf-ExtraBoldItalic.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-stretch: extra-expanded;
+  src:url("./fonts/OTF/DXRigraf-ExtraExpanded.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-stretch: extra-expanded;
+  font-style: italic;
+  src:url("./fonts/OTF/DXRigraf-ExtraExpandedItalic.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 200;
+  src:url("./fonts/OTF/DXRigraf-ExtraLight.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 200;
+  font-stretch: expanded;
+  src:url("./fonts/OTF/DXRigraf-ExtraLightExpanded.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 200;
+  font-style: italic;
+  src:url("./fonts/OTF/DXRigraf-ExtraLightItalic.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-style: italic;
+  src:url("./fonts/OTF/DXRigraf-Italic.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 300;
+  src:url("./fonts/OTF/DXRigraf-Light.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 300;
+  font-stretch: expanded;
+  src:url("./fonts/OTF/DXRigraf-LightExpanded.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 300;
+  font-stretch: expanded;
+  font-style: italic;
+  src:url("./fonts/OTF/DXRigraf-LightExpandedItalic.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 300;
+  font-stretch: extra-expanded;
+  font-style: italic;
+  src:url("./fonts/OTF/DXRigraf-LightExtExpIta.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 300;
+  font-stretch: extra-expanded;
+  src:url("./fonts/OTF/DXRigraf-LightExtraExpanded.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 300;
+  font-style: italic;
+  src:url("./fonts/OTF/DXRigraf-LightItalic.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 500;
+  font-stretch: extra-expanded;
+  font-style: italic;
+  src:url("./fonts/OTF/DXRigraf-MedExtExpIta.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 500;
+  src:url("./fonts/OTF/DXRigraf-Medium.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 500;
+  font-stretch: expanded;
+  src:url("./fonts/OTF/DXRigraf-MediumExpanded.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 500;
+  font-stretch: expanded;
+  font-style: italic;
+  src:url("./fonts/OTF/DXRigraf-MediumExpandedItalic.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 500;
+  font-stretch: expanded;
+  src:url("./fonts/OTF/DXRigraf-MediumExtraExpanded.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 500;
+  font-style: italic;
+  src:url("./fonts/OTF/DXRigraf-MediumItalic.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  src:url("./fonts/OTF/DXRigraf-Regular.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 600;
+  font-stretch: expanded;
+  font-style: italic;
+  src:url("./fonts/OTF/DXRigraf-SemBdExpIta.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 600;
+  font-stretch: extra-expanded;
+  src:url("./fonts/OTF/DXRigraf-SemBdExtExp.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 600;
+  font-stretch: extra-expanded;
+  font-style: italic;
+  src:url("./fonts/OTF/DXRigraf-SemBdExtExpIta.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 600;
+  src:url("./fonts/OTF/DXRigraf-SemiBold.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 600;
+  font-stretch: expanded;
+  src:url("./fonts/OTF/DXRigraf-SemiBoldExpanded.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 600;
+  font-style: italic;
+  src:url("./fonts/OTF/DXRigraf-SemiBoldItalic.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 100;
+  src:url("./fonts/OTF/DXRigraf-Thin.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 100;
+  font-stretch: expanded;
+  src:url("./fonts/OTF/DXRigraf-ThinExpanded.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 100;
+  font-stretch: expanded;
+  font-style: italic;
+  src:url("./fonts/OTF/DXRigraf-ThinExpandedItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 100;
+  font-stretch: extra-expanded;
+  font-style: italic;
+  src:url("./fonts/OTF/DXRigraf-ThinExtExpIta.otf") format("opentype");
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 100;
+  font-stretch: extra-expanded;
+  src:url("./fonts/OTF/DXRigraf-ThinExtraExpanded.otf") format("opentype"); 
+}
+@font-face {
+  font-family: DXRigraf;
+  font-weight: 100;
+  font-style: italic;
+  src:url("./fonts/OTF/DXRigraf-ThinItalic.otf") format("opentype"); 
 }

@@ -1,3 +1,34 @@
-.app {
+.media(@rule1920, @rule1024, @rule) {
+    @media (min-width: 0px) {
+        @rule();
+    }
+
+    @media (min-width: 1024px) {
+        @rule1024();
+        
+    }
+
+    @media (min-width: 1920px) {
+        @rule1920();
+    }
+}
+
+.App {
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    >* {
+        margin-bottom: 112px;
+    }
+    .media({
+        margin-left: 243px;
+        margin-right: 243px;
+    },{
+        margin-left: 87px;
+        margin-right: 87px;
+    },{
+        margin-left: 49px;
+        margin-right: 49px;
+    });
+    
 }
