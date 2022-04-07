@@ -3,9 +3,14 @@
 interface CssExports {
   'Header': string;
   'Header_navbar': string;
+  'close': string;
   'link': string;
   'link_waraper': string;
   'logo': string;
+  'menu': string;
+  'menu_container': string;
+  'mobileNav': string;
+  'open': string;
   'singIn': string;
   'singInIcon': string;
 }

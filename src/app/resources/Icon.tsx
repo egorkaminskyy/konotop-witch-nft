@@ -40,6 +40,10 @@ const Icon  = (props: IconProps) => {
                     <title>chevron</title>
                     <path d="M3.8 0L0 3.99999L19 24L38 4.00007L34.2 8.22704e-05L19 16L3.8 0Z" fill="inherit"/>
                 </symbol>
+                <symbol id='icon-menu' width="36" height="26" viewBox="0 0 36 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <title>menu</title>
+                    <path d="M0 0V5.08235H36V0H0ZM0 10.1647V15.2471H36V10.1647H0ZM0 20.3294V25.4118H36V20.3294H0Z" fill="#212121"/>
+                </symbol>
             </defs>
             </svg>):
             <i
