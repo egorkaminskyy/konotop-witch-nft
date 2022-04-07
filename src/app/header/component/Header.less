@@ -144,30 +144,26 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        .fontSize(
-            {
-            },
-            {
-            },
-            {
-                padding-top: 40px;
-                align-items: center;
-                position: absolute;
-                display: flex;
-                flex-direction: column;
-                @time:0.4s;
-                transform-origin:top;
-                overflow: hidden;
-                -webkit-transition: transform @time * 2 ease-out;
-                -moz-transition: transform @time * 2 ease-out;
-                -o-transition: transform @time * 2 ease-out;
-                transition: transform @time * 2 ease;
-                transform:scaleY(0);
-                height: 30vh;
-                &.open {
-                    transform:scaleY(1);
-                }
-            });
+        @media (max-width: 1023px)
+        {
+            padding-top: 40px;
+            align-items: center;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            @time:0.4s;
+            transform-origin:top;
+            overflow: hidden;
+            -webkit-transition: transform @time * 2 ease-out;
+            -moz-transition: transform @time * 2 ease-out;
+            -o-transition: transform @time * 2 ease-out;
+            transition: transform @time * 2 ease;
+            transform: scaleY(0);
+            height: 30vh;
+            &.open {
+                transform:scaleY(1);
+            }
+        };
         .link_waraper {
             list-style: none;
             .link {
@@ -197,7 +193,7 @@
     }
 }
 .mobileNav {
-    margin-bottom: 0;
+    margin-bottom: 0!important;
     @time:0.4s;
     transform-origin:top;
     overflow: hidden;
