@@ -74,22 +74,22 @@ function getTeamResources(): TeamResources {
             {
                 title: 'name surname',
                 description: 'job',
-                linkUrl:'photo_2022-03-17_21-22-16.svg'
+                linkUrl:'nft1.svg'
             },
             {
                 title: 'name surname',
                 description: 'job',
-                linkUrl:'photo_2022-03-29_15-57-00.svg'
+                linkUrl:'nft2.svg'
             },
             {
                 title: 'name surname',
                 description: 'job',
-                linkUrl:'photo_2022-03-29_15-57-03.svg'
+                linkUrl:'nft3.svg'
             },
             {
                 title: 'name surname',
                 description: 'job',
-                linkUrl:'photo_2022-03-29_15-57-07.svg'
+                linkUrl:'nft4.svg'
             },
         ],
         contacts: [
@@ -139,22 +139,22 @@ function getCollectionResources(): CollectionResources {
             {
                 title: 'NFT #1',
                 description: 'The Russian Federation\nstarted the war on February 24',
-                linkUrl:'photo_2022-03-17_21-22-16.svg'
+                linkUrl:'nft1.svg'
             },
             {
                 title: 'NFT #2',
                 description: 'The Russian Federation\nstarted the war on February 24',
-                linkUrl:'photo_2022-03-29_15-57-00.svg'
+                linkUrl:'nft2.svg'
             },
             {
                 title: 'NFT #3',
                 description: 'The Russian Federation\nstarted the war on February 24',
-                linkUrl:'photo_2022-03-29_15-57-03.svg'
+                linkUrl:'nft3.svg'
             },
             {
                 title: 'NFT #4',
                 description: 'The Russian Federation\nstarted the war on February 24',
-                linkUrl:'photo_2022-03-29_15-57-07.svg'
+                linkUrl:'nft4.svg'
             },
         ]
     }
