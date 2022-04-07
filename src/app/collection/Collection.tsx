@@ -30,7 +30,7 @@ const Collection: FunctionComponent<CollectionProps> = (props: CollectionProps) 
             {resources.collection.map((item, key) => (<div className={styles.item} key={key}>
                 <div className={styles.nft} 
                     style={{
-                        backgroundImage: `url(${'/' + item.linkUrl})`
+                        backgroundImage: `url('${require('./../../img/' + item.linkUrl)}')`
                     }}
                 ></div>
                 <div className={styles.text_container}>
