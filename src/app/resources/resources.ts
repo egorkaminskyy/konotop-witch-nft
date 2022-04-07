@@ -28,7 +28,7 @@ function getMintResources(): MintResources {
         title: 'Mint your Dainty Dolphin',
         description: `Enter the amount of Dainty Dolphins\nyou would like to mint`,
         mintButton: {
-            linkUrl: '',
+            linkUrl: 'https://opensea.io/',
             title: 'Mint'
         },
         fildTitle:'Price per Dolphin',
@@ -74,21 +74,25 @@ function getTeamResources(): TeamResources {
             {
                 title: 'name surname',
                 description: 'job',
+                descriptionUrl:'https://opensea.io/',
                 linkUrl:'nft1.svg'
             },
             {
                 title: 'name surname',
                 description: 'job',
+                descriptionUrl:'https://opensea.io/',
                 linkUrl:'nft2.svg'
             },
             {
                 title: 'name surname',
                 description: 'job',
+                descriptionUrl:'https://opensea.io/',
                 linkUrl:'nft3.svg'
             },
             {
                 title: 'name surname',
                 description: 'job',
+                descriptionUrl:'https://opensea.io/',
                 linkUrl:'nft4.svg'
             },
         ],
@@ -122,7 +126,7 @@ function getFooterResources(): FooterResources {
         footerTitle: `<span style="color:#efc058;">Konotop</span> <span style="font-style:italic">witch</span> <span style="color:#5466f4;">NFT</span>`,
         designedBy: `website design by <div style="background-image: url(/instIcon.svg);"></div> katsubodesign.ua`,
         footerBuyNft: {
-            linkUrl: '',
+            linkUrl: 'https://opensea.io/',
             title: 'Buy NFT'
         },
     }
@@ -209,7 +213,7 @@ function getAboutUsResources(): AboutResources {
         aboutTitle: 'About project',
         aboutDescription: `The Russian Federation started the war on February 24, 2022 against Ukraine.\nAt 05:05 Kyiv time, Russian bombers began attacking military and civilian infrastructure.\nWe are raising funds to help the Ukrainian army! #StopPutin`,
         buyNft: {
-            linkUrl: '',
+            linkUrl: 'https://opensea.io/',
             title: 'Buy NFT'
         },
     }
@@ -221,11 +225,11 @@ function getHomeResources(): HomeResources {
         homeTitle: `BUY <span style="color:#efc058;">NFT</span>  - \nHELP <span style="color:#5466f4;">UKRAINE</span>`,
         homeDescription: `100% of the proceeds will go to help the Ukrainian army\nand Ukrainian refugees who left their homes due to hostilities\nby the Russian Federation`,
         buyNft: {
-            linkUrl: '',
+            linkUrl: 'https://opensea.io/',
             title: 'Buy NFT'
         },
         helpUkraine: {
-            linkUrl: '',
+            linkUrl: 'https://opensea.io/',
             title: 'Help Ukraine'
         },
     }
@@ -250,12 +254,16 @@ function getHeaderResources(): HeaderResources {
                 title: 'Collection'
             },
             singInLink: {
-                linkUrl: '/singIn',
+                linkUrl: 'https://opensea.io/',
                 title: 'Sing In'
             },
             logoUrl: {
                 linkUrl: '/',
                 title: 'konotop witch nft'
+            },
+            teamLink: {
+                linkUrl: '/',
+                title: 'Team'
             },
         }
 }

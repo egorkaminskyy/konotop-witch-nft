@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React, { forwardRef, FunctionComponent } from 'react';
 import { Link } from '../header/component/Header';
 import Icon from '../resources/Icon';
 
@@ -6,6 +6,7 @@ import styles from './Team.less'
 
 export interface TeamLink extends Link {
     description: string;
+    descriptionUrl: string;
 }
 
 export enum ContactType {
@@ -31,11 +32,11 @@ export interface TeamProps {
     resources: TeamResources;
 }
 
-const Team: FunctionComponent<TeamProps> = (props: TeamProps) => {
+const Team = (props: TeamProps, ref: any) => {
     const { resources } = props;
 
     return (
-    <section id='collection' className={styles.Collection}>
+    <section id='collection' ref={ref} className={styles.Collection}>
         <div className={styles.collection_title}>
             {resources.teamTitle}
         </div>
@@ -53,7 +54,7 @@ const Team: FunctionComponent<TeamProps> = (props: TeamProps) => {
                     <div className={styles.title}>
                         {item.title}
                     </div>
-                    <a href={item.linkUrl} target="_blank" rel="noreferrer" className={styles.description}>
+                    <a href={item.descriptionUrl} target="_blank" rel="noreferrer" className={styles.description}>
                         {item.description}
                     </a>
                 </div>
@@ -69,4 +70,4 @@ const Team: FunctionComponent<TeamProps> = (props: TeamProps) => {
 
 
 
-export { Team as default }
+export default forwardRef(Team);

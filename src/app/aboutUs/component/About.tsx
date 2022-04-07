@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React, { forwardRef, FunctionComponent } from 'react';
 
 import { Link } from '../../header/component/Header';
 import styles from './About.less'
@@ -11,14 +11,13 @@ export interface AboutResources {
 
 export interface AboutProps {
     resources: AboutResources;
-    onBuyNftClick: () => void;
 }
 
-const About: FunctionComponent<AboutProps> = (props: AboutProps) => {
-    const { resources, onBuyNftClick } = props;
+const About = (props: AboutProps, ref: any) => {
+    const { resources } = props;
 
     return (
-    <section id='about' className={styles.About}>
+    <section id='about' ref={ref} className={styles.About}>
         <div className={styles.title_container}>
             <div>
                 <div className={styles.about_title} dangerouslySetInnerHTML={{ __html: resources.aboutTitle}}>
@@ -35,12 +34,10 @@ const About: FunctionComponent<AboutProps> = (props: AboutProps) => {
                 </div>
             </div>
         </div>
-        <div className={styles.button_container}>
+        <a href={resources.buyNft.linkUrl} className={styles.button_container}>
             {resources.buyNft.title}
-        </div>
+        </a>
     </section>)
 }
 
-
-
-export { About as default }
+export default forwardRef(About)

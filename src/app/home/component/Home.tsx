@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React, { forwardRef, FunctionComponent } from 'react';
 
 import { Link } from '../../header/component/Header';
 import styles from './Home.less'
@@ -12,15 +12,13 @@ export interface HomeResources {
 
 export interface HomeProps {
     resources: HomeResources;
-    onBuyNftClick: () => void;
-    onHelpUkraineClick: () => void;
 }
 
-const Home: FunctionComponent<HomeProps> = (props: HomeProps) => {
-    const { resources, onBuyNftClick, onHelpUkraineClick} = props;
+const Home = (props: HomeProps, ref: any) => {
+    const { resources } = props;
 
     return (
-    <section id='home' className={styles.Home}>
+    <section id='home' ref={ref} className={styles.Home}>
         <div>
             <div className={styles.image_witch}>
 
@@ -35,12 +33,12 @@ const Home: FunctionComponent<HomeProps> = (props: HomeProps) => {
                 </div>
             </div>
             <div className={styles.button_container}>
-                <div className={styles.button_buy}>
+                <a className={styles.button_buy}>
                     {resources.buyNft.title}
-                </div>
-                <div className={styles.button_help}>
+                </a>
+                <a className={styles.button_help}>
                     {resources.helpUkraine.title}
-                </div>
+                </a>
             </div>
         </div>
     </section>)
@@ -48,4 +46,4 @@ const Home: FunctionComponent<HomeProps> = (props: HomeProps) => {
 
 
 
-export { Home as default }
+export default forwardRef(Home)

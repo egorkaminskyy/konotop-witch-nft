@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { FunctionComponent } from "react";
 import Icon from '../../resources/Icon';
 import styles from './Header.less'
 
@@ -13,6 +12,7 @@ export interface HeaderResources {
     logoUrl: Link;
     faqLink: Link;
     homeLink: Link;
+    teamLink: Link;
     aboutLink: Link;
     singInLink: Link;
     collectionLink: Link;
@@ -20,49 +20,45 @@ export interface HeaderResources {
 
 export interface HeaderProps {
     resources: HeaderResources;
-    onLogoClick: () => void;
-    onFaqClick: () => void;
-    onHomeClick: () => void;
-    onAboutClick: () => void;
-    onSinginClick: () => void;
+    scrollSmoothHandler: (i: number) => void;
 }
 
-const Header: FunctionComponent<HeaderProps> = (props: HeaderProps) => {
-    const { resources,
-        onLogoClick,
-        onFaqClick,
-        onHomeClick,
-        onAboutClick,
-        onSinginClick } = props;
+const Header = (props: HeaderProps) => {
+    const { resources, scrollSmoothHandler } = props;
 
     return (
     <header className={styles.Header}>
-        <a className={styles.logo}>
+        <span className={styles.logo}>
             {resources.logoUrl.title}
-        </a>
+        </span>
         <ul className={styles.Header_navbar}>
             <li className={styles.link_waraper}>
-                <a className={styles.link} >
+                <span  className={styles.link} onClick={() => scrollSmoothHandler(0)} >
                     {resources.homeLink.title}
-                </a>
+                </span>
             </li>
             <li className={styles.link_waraper}>
-                <a className={styles.link}>
+                <span className={styles.link}  onClick={() => scrollSmoothHandler(1)}>
                     {resources.aboutLink.title}
-                </a>
+                </span>
             </li>
             <li className={styles.link_waraper}>
-                <a className={styles.link}>
+                <span className={styles.link}  onClick={() => scrollSmoothHandler(2)}>
                     {resources.collectionLink.title}
-                </a>
+                </span>
             </li>
             <li className={styles.link_waraper}>
-                <a className={styles.link}>
+                <span className={styles.link}  onClick={() => scrollSmoothHandler(3)}>
                     {resources.faqLink.title}
-                </a>
+                </span>
+            </li>
+            <li className={styles.link_waraper}>
+                <span className={styles.link}  onClick={() => scrollSmoothHandler(4)}>
+                    {resources.teamLink.title}
+                </span>
             </li>
         </ul>
-        <a className={styles.singIn}>
+        <a href={resources.singInLink.linkUrl} className={styles.singIn}>
             <Icon icon='sing-in' iconClass={styles.singInIcon}/><span>{resources.singInLink.title}</span>
         </a>
     </header>)

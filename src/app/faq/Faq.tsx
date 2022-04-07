@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useEffect, useState } from 'react';
+import React, { forwardRef, FunctionComponent, useEffect, useState } from 'react';
 import Icon from '../resources/Icon';
 
 import styles from './Faq.less'
@@ -18,7 +18,7 @@ export interface FaqProps {
     resources: FaqResources;
 }
 
-const Faq = (props: FaqProps) => {
+const Faq = (props: FaqProps, ref: any) => {
     const { title, collection } = props.resources;
     const [ items, setCollection] = useState({collection});
     
@@ -27,7 +27,7 @@ const Faq = (props: FaqProps) => {
         setCollection({collection});
     };
     return (
-    <section id='faq' className={styles.Faq}>
+    <section id='faq' ref={ref} className={styles.Faq}>
         <div className={styles.title}>
             {title}
         </div>
@@ -53,4 +53,4 @@ const Faq = (props: FaqProps) => {
     </section>)
 }
 
-export { Faq as default }
+export default forwardRef(Faq);

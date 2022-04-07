@@ -54,7 +54,7 @@ const Mint = (props: MintProps) => {
                     {fildTitle}
                 </div>
                 <div className={styles.main}>
-                    {Math.round(count * multipliaer) + ' ' + cryptoCurrency} Each
+                    {multipliaer+ ' ' + cryptoCurrency} Each
                 </div>
                 <div className={styles.field_title}>
                     49 / 1836 minted

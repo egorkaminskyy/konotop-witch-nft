@@ -1,5 +1,5 @@
 import { url } from 'inspector';
-import React, { FunctionComponent } from 'react';
+import React, { forwardRef, FunctionComponent } from 'react';
 import { Link } from '../header/component/Header';
 
 import styles from './Collection.less'
@@ -18,11 +18,11 @@ export interface CollectionProps {
     resources: CollectionResources;
 }
 
-const Collection: FunctionComponent<CollectionProps> = (props: CollectionProps) => {
+const Collection = (props: CollectionProps, ref: any) => {
     const { resources } = props;
 
     return (
-    <section id='collection' className={styles.Collection}>
+    <section id='collection' ref={ref} className={styles.Collection}>
         <div className={styles.collection_title}>
             {resources.collectionTitle}
         </div>
@@ -51,4 +51,4 @@ const Collection: FunctionComponent<CollectionProps> = (props: CollectionProps) 
 
 
 
-export { Collection as default }
+export default forwardRef(Collection);

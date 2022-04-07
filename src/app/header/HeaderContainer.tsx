@@ -3,7 +3,7 @@ import { aboutClick, collectionClick, faqClick, homeClick, singInClick, logoClic
 import Header from "./component/Header";
 import { Dispatch } from "@reduxjs/toolkit";
 
-const mapDispatchProps = (dispatch: Dispatch) => ({
+const mapDispatchProps = (dispatch: Dispatch ) => ({
     onLogoClick: () => {
         dispatch(logoClick());
     },
@@ -24,4 +24,4 @@ const mapDispatchProps = (dispatch: Dispatch) => ({
     }
 })
 
-export default connect(null, mapDispatchProps)(Header)
+export default connect(null, mapDispatchProps, )(Header)
