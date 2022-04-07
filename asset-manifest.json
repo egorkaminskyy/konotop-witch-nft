@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/konotop-witch-nft/static/css/main.0b2506b9.css",
-    "main.js": "/konotop-witch-nft/static/js/main.2e5649bb.js",
+    "main.css": "/konotop-witch-nft/static/css/main.3b6811fd.css",
+    "main.js": "/konotop-witch-nft/static/js/main.2e0875cb.js",
     "static/media/nft4.svg": "/konotop-witch-nft/static/media/nft4.38327e108b0f5cd296a1.svg",
     "static/media/nft2.svg": "/konotop-witch-nft/static/media/nft2.016d9c001a125135ae10.svg",
     "static/media/nft3.svg": "/konotop-witch-nft/static/media/nft3.7da8c8fe775234e01f83.svg",
@@ -63,11 +63,11 @@
     "static/media/DXRigraf-BlackExpanded.otf": "/konotop-witch-nft/static/media/DXRigraf-BlackExpanded.e2f949aa2b6b3ecd90e6.otf",
     "static/media/DXRigraf-Black.otf": "/konotop-witch-nft/static/media/DXRigraf-Black.19ce605d62fafeb17819.otf",
     "index.html": "/konotop-witch-nft/index.html",
-    "main.0b2506b9.css.map": "/konotop-witch-nft/static/css/main.0b2506b9.css.map",
-    "main.2e5649bb.js.map": "/konotop-witch-nft/static/js/main.2e5649bb.js.map"
+    "main.3b6811fd.css.map": "/konotop-witch-nft/static/css/main.3b6811fd.css.map",
+    "main.2e0875cb.js.map": "/konotop-witch-nft/static/js/main.2e0875cb.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b2506b9.css",
-    "static/js/main.2e5649bb.js"
+    "static/css/main.3b6811fd.css",
+    "static/js/main.2e0875cb.js"
   ]
 }
