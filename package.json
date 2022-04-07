@@ -2,6 +2,7 @@
   "name": "konotop-witch-nft",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://egorkaminskyy.github.io/konotop-witch-nft/",
   "dependencies": {
     "-": "0.0.1",
     "@babel/core": "^7.16.0",
